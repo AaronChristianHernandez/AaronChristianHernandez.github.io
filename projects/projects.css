@@ -203,7 +203,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('Website Images/TDA/TDA-WEB.png');
+  background-image: url('../Website Images/TDA/TDA-WEB.png');
   background-size: cover;
   background-position: center;
   filter: blur(2px) brightness(0.3) hue-rotate(0deg);
@@ -217,7 +217,7 @@ nav {
 
 /* Project 1 - Red Glow */
 .project-card[style*="--index: 0"] .project-images::before {
-  background-image: url('Website Images/TDA/TDA-WEB.png');
+  background-image: url('../Website Images/TDA/TDA-WEB.png');
   filter: blur(2px) brightness(0.3) hue-rotate(0deg);
 }
 
@@ -227,7 +227,7 @@ nav {
 
 /* Project 2 - Dark Red Glow */
 .project-card[style*="--index: 1"] .project-images::before {
-  background-image: url('Website Images/ANDRIA/ANDIRA WEB.png');
+  background-image: url('../Website Images/ANDRIA/ANDIRA WEB.png');
   filter: blur(2px) brightness(0.3) hue-rotate(0deg);
 }
 
@@ -237,7 +237,7 @@ nav {
 
 /* Project 3 - Regen Green Glow */
 .project-card[style*="--index: 2"] .project-images::before {
-  background-image: url('Website Images/regen/Regen Web.png');
+  background-image: url('../Website Images/regen/Regen Web.png');
   filter: blur(2px) brightness(0.3) hue-rotate(120deg);
 }
 
@@ -247,7 +247,7 @@ nav {
 
 /* Project 4 - ROSCA Glow */
 .project-card[style*="--index: 3"] .project-images::before {
-  background-image: url('Website Images/ROSCA/ROSCA WEB.png');
+  background-image: url('../Website Images/ROSCA/ROSCA WEB.png');
   filter: blur(2px) brightness(0.3) hue-rotate(10deg);
 }
 
@@ -257,7 +257,7 @@ nav {
 
 /* Project 5 - CGW Glow */
 .project-card[style*="--index: 4"] .project-images::before {
-  background-image: url('Website Images/CGW/CGW WEB.png');
+  background-image: url('../Website Images/CGW/CGW WEB.png');
   filter: blur(2px) brightness(0.3) hue-rotate(355deg);
 }
 
@@ -267,7 +267,7 @@ nav {
 
 /* Project 6 - BEF Glow */
 .project-card[style*="--index: 5"] .project-images::before {
-  background-image: url('Website Images/BEF/BEF WEB.png');
+  background-image: url('../Website Images/BEF/BEF WEB.png');
   filter: blur(2px) brightness(0.3) hue-rotate(5deg);
 }
 
@@ -277,7 +277,7 @@ nav {
 
 /* Project 7 - CARIBANA Glow */
 .project-card[style*="--index: 6"] .project-images::before {
-  background-image: url('Website Images/CARIBANA/CARINABA WEB.png');
+  background-image: url('../Website Images/CARIBANA/CARINABA WEB.png');
   filter: blur(2px) brightness(0.3) hue-rotate(15deg);
 }
 
