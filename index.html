@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AaronHernandez</title>
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <section id="hero">
+    <header>
+      <a href="index.html" class="header-logo">Aaron<span></span></a>
+      <nav>
+        <a href="index.html" class="nav-item active">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="left">
+        <h3>Hi, I'm <span class="accent">Aaron</span> Hernandez</h3>
+        <h2><span >a</span> <span class="typing-container"><span class="typing"></span></span></h2>
+
+        <p>
+          I use animation as a third dimension by which to simplify experiences and guiding thro each and every interaction. I'm not adding motion just to spruce things up, but doing it in ways that.
+        </p>
+        <div class="cta-section">
+          <a href="projects.html" class="cta-1">Projects
+            <i class="fa-solid fa-code"></i>
+          </a>
+          <button class="cta-2">Hire me
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
+        <div class="social-section">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="img-wrap">
+          <img class="hero-img " src="AaronHernandez.png" alt="Aaron Hernandez">
+    
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <script>
+    const typingElement = document.querySelector('.typing');
+    const words = ['Website Developer.', 'Go High Level Expert', 'WordPress Developer.', 'Social Media Manager.'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+    let deleteSpeed = 50;
+    let delayBetweenWords = 2000;
+    let lastTypeTime = Date.now();
+
+    function type() {
+      const currentWord = words[wordIndex];
+      const now = Date.now();
+
+      // Typing phase
+      if (!isDeleting && charIndex < currentWord.length) {
+        if (now - lastTypeTime > typeSpeed) {
+          typingElement.textContent += currentWord.charAt(charIndex);
+          charIndex++;
+          lastTypeTime = now;
+        }
+      }
+      // Deleting phase
+      else if (isDeleting && charIndex > 0) {
+        if (now - lastTypeTime > deleteSpeed) {
+          typingElement.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+          lastTypeTime = now;
+        }
+      }
+      // Switch to deleting after word is typed
+      else if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        lastTypeTime = now + delayBetweenWords;
+      }
+      // Move to next word
+      else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        lastTypeTime = now;
+      }
+
+      requestAnimationFrame(type);
+    }
+
+    type();
+  </script>
+
+</body>
+
+</html>
