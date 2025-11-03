@@ -1,5 +1,27 @@
 /* Services Page Styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
 #services-hero {
   width: 100%;
   min-height: 100vh;
@@ -27,6 +49,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .section-header .accent-large {
