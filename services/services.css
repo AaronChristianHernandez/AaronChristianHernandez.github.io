@@ -280,6 +280,7 @@ header {
   gap: 70px;
   position: relative;
   z-index: 1;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-logo {
