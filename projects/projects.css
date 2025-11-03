@@ -9,6 +9,7 @@
 }
 
 body {
+  padding: 0 5%;
   background: #000000;
   color: #ffffff;
   min-height: 100vh;
@@ -16,7 +17,6 @@ body {
 
 #projects-hero {
   min-height: 100vh;
-  padding: 0 10%;
 }
 
 header {
